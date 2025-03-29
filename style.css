@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 span {
+    color: #00ffcc;
+    font-weight: bold;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.tab-btn {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.tab-btn:hover {
+    background-color: #00ffcc;
+}
+
+.page {
+    display: none;
+}
+
+#home {
+    display: block; /* Show Home page by default */
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.extra-img {
+    width: 80%; /* Adjust the size of the code image */
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #00ffcc;
+    color: #121212;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.download-btn:hover {
+    background: #00ddaa;
+}

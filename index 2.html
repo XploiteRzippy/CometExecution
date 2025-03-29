@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comet Executor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Tabs -->
+    <div class="tabs">
+        <button class="tab-btn" onclick="showPage('home')">Home</button>
+        <button class="tab-btn" onclick="showPage('downloads')">Downloads</button>
+    </div>
+
+    <!-- Home Page -->
+    <div id="home" class="page">
+        <div class="container">
+            <!-- Logo Image -->
+            <img src="logo.png" alt="Comet Executor Logo" class="logo">
+            <h1>🚀 Unleash The Execution Power With <span>Comet Executor</span></h1>
+
+            <!-- Additional Image: Code In Executor -->
+            <div class="additional-image">
+                <img src="executor-code-image.jpg" alt="Code in Executor" class="extra-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Downloads Page -->
+    <div id="downloads" class="page" style="display:none;">
+        <div class="container">
+            <h2>Download Comet Executor</h2>
+            <a href="comet-executor.zip" download class="download-btn">Download Now</a>
+        </div>
+    </div>
+
+    <script>
+        // Show/Hide the correct page when tabs are clicked
+        function showPage(pageName) {
+            var pages = document.querySelectorAll('.page');
+            pages.forEach(function(page) {
+                page.style.display = 'none';
+            });
+            document.getElementById(pageName).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
